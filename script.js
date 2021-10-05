@@ -6,7 +6,7 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 const containerElement = document.getElementsByClassName('countdown-container');
 
-const countdownDate = new Date('12 Nov 2021');
+const countdownDate = new Date('19 Nov 2021');
 
 function countdown() {  
   const currentDate = new Date();
