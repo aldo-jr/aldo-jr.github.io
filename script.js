@@ -6,7 +6,15 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 const containerElement = document.getElementsByClassName('countdown-container');
 
-const countdownDate = new Date('12 Nov 2021');
+const params = (new URL(document.location)).searchParams
+const locationParam = params.get('location');
+let countdownDate = new Date('12 Nov 2021');
+
+if (locationParam === 'puntacana'){
+  countdownDate = new Date('11 Oct 2021 01:50')
+  document.body.style.backgroundImage = "url('./puntacana.jpg')";
+}
+  
 
 function countdown() {  
   const currentDate = new Date();
