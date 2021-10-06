@@ -8,7 +8,7 @@ const containerElement = document.getElementsByClassName('countdown-container');
 
 const params = (new URL(document.location)).searchParams
 const locationParam = params.get('location');
-let countdownDate = new Date('12 Nov 2021');
+let countdownDate = new Date('19 Nov 2021');
 
 if (locationParam === 'puntacana'){
   countdownDate = new Date('11 Oct 2021 01:50')
